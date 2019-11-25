@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    filter: url(#goo);
+}
+
+.droplet {
+    width: 6.25rem;
+    height: 6.25rem;
+    top: -20%;
+    background-color: #0CE838;
+    position: absolute;
+    border-radius: 50%;
+    animation: fall 15s infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-20vh); }
+    20% { transform: translateY(0vh); }
+    80% { transform: translateY(85vh) }
+    100% { transform: translateY(120vh); }
+}
+
+.droplet:nth-of-type(2n) {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.droplet:nth-of-type(3n) {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.droplet:nth-of-type(1) {
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.droplet:nth-of-type(2) {
+    left: 60%;
+    animation-delay: 2s;
+}
+
+.droplet:nth-of-type(3) {
+    left: 250%;
+    animation-delay: 3s;
+}
+
+.droplet:nth-of-type(4) {
+    left: 75%;
+    animation-delay: 4s;
+}
+
+.droplet:nth-of-type(5) {
+    left: 35%;
+    animation-delay: 5s;
+}
+
+.droplet:nth-of-type(6) {
+    left: 50%;
+    animation-delay: 6s;
+}
+
+.droplet:nth-of-type(7) {
+    left: 65%;
+    animation-delay: 7s;
+}
+
+.droplet:nth-of-type(8) {
+    left: 35%;
+    animation-delay: 8s;
+}
+
+.droplet:nth-of-type(9) {
+    left: 55%;
+    animation-delay: 9s;
+}
+
+.droplet:nth-of-type(10) {
+    left: 55%;
+    animation-delay: 10s;
+}
+
+.droplet:nth-of-type(11) {
+    left: 35%;
+    animation-delay: 11s;
+}
+
+.droplet:nth-of-type(12) {
+    left: 35%;
+    animation-delay: 12s;
+}
+
+.droplet:nth-of-type(13) {
+    left: 65%;
+    animation-delay: 13s;
+}
+
+.droplet:nth-of-type(14) {
+    left: 40%;
+    animation-delay: 14s;
+}
+
+.droplet:nth-of-type(15) {
+    left: 60%;
+    animation-delay: 15s;
+}
+
+.border {
+    position: absolute;
+    background-color: #0CE838;
+    width: 100%;
+    height: 10%;
+}
+
+.border:first-of-type {
+    top: 0;
+    left: 0;
+}
+
+.border:last-of-type {
+    bottom: 0;
+    left: 0;
+}
